@@ -22,6 +22,14 @@ public class aboutfood
     eater popeye = new eater(4000); // popeye needs 4000 calories
     int ate = (int) thefood.accept(popeye);  
     Console.WriteLine("popeye ate "+ate+" calories");
+
+    //problem 0 visitor
+    sumFoodList problem0 = new sumFoodList();
+    Console.WriteLine("Problem 0 results below:");
+    Console.WriteLine(c.accept(problem0));
+
+
+    
     
     // healthinspector picks out healthiest food item
     healthinspector nutritionist = new healthinspector(c);
@@ -30,8 +38,7 @@ public class aboutfood
     Console.Read();
 
 
-     // The following code will only work when you've written your
-     // xmlwriter visitor class
+     
 
 /*
 
