@@ -22,8 +22,8 @@ namespace foodstuff {
  		object visit(beverage b);
  	}// just make sure to include implementing this interfact when you make a new visitor class and you should be good to go
 
-
- 	public class beveragevisitor: mastervisitor
+ 	//new visitor class is below can visit beverages and all other classes.
+ 	public class beveragevisitor: mastervisitor 
  	{
 
  		public int foodSum=0;
