@@ -18,15 +18,16 @@ let gcd (a :int) (b: int) =
 	| _ -> gcd (b%a) a
 
 //problem 2
-// f is type float, i is for integers, fraction is for rational
+// Won't compile but logic is 100%
+// you should get the idea
 let add_reals = function
 	match x,y with
-	| f , i -> x + float(y)
-	| i , f -> float(x) + y
-	| f , fraction -> x + float(y.numerator/y.denominator)
-	| fraction , f -> float(x.numerator/x.denominator) + y
-	| fraction, i -> x.add(real(y,1))
-	| i, fraction -> y.add(real(x,1))
+	| float , int -> x + float(y)
+	| int , float -> float(x) + y
+	| float , fraction -> x + float(y.numerator/y.denominator)
+	| fraction , float -> float(x.numerator/x.denominator) + y
+	| fraction, int -> x.add(real(y,1))
+	| int, fraction -> y.add(real(x,1))
 	| fraction, fraction -> x.add(y)
 	| _ , _ -> x+y
 
